@@ -31,4 +31,4 @@ export const App = () => {
   return <Expenses items={expenses} />;
 };
 
-export default App;
+
