@@ -29,9 +29,15 @@ export const App = () => {
       date: new Date(2022, 1, 28),
     },
   ];
+
+  const addExpenseHandler = expense => {
+    console.log('In App.JS')
+    console.log(expense)
+  }
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
